@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	String
-%define	pnam	KeyboardDistance
+%define		pdir	String
+%define		pnam	KeyboardDistance
 Summary:	String::KeyboardDistance - string comparison algorithm
 Summary(pl):	String::KeyboardDistance - algorytm porównywania ³añcuchów
 Name:		perl-String-KeyboardDistance
