@@ -5,10 +5,10 @@
 %define	pdir	String
 %define	pnam	KeyboardDistance
 Summary:	String::KeyboardDistance - String Comparison Algorithm
-#Summary(pl):	
+Summary(pl):	String::KeyboardDistance - algorytm porównywania ³añcuchów
 Name:		perl-String-KeyboardDistance
 Version:	1.01
-Release:	1
+Release:	2
 License:	?
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -18,15 +18,22 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This module implmements a version of keyboard distance for fuzzy string
-matching.  Keyboard distance is a measure of the physical distance between
-two keys on a keyboard.  For example, 'g' has a distance of 1 from the
-keys 'r', 't', 'y', 'f', 'h', 'v', 'b', and 'n'.  Immediate diagonals
-(like ''r, 'y', 'v', and 'n') are considered to have a distance of 1
-instead of 1.414 to help to prevent horizontal/vertical bias.
+This module implemements a version of keyboard distance for fuzzy
+string matching. Keyboard distance is a measure of the physical
+distance between two keys on a keyboard. For example, 'g' has a
+distance of 1 from the keys 'r', 't', 'y', 'f', 'h', 'v', 'b', and
+'n'. Immediate diagonals (like 'r', 'y', 'v', and 'n') are considered
+to have a distance of 1 instead of 1.414 to help to prevent
+horizontal/vertical bias.
 
-# %description -l pl
-# TODO
+%description -l pl
+Ten modu³ jest implementacj± pewnej wersji odleg³o¶ci klawiaturowej
+do rozmytego dopasowywania ³añcuchów. Odleg³o¶æ klawiaturowa to miara
+fizycznej odleg³o¶ci pomiêdzy dwoma klawiszami na klawiaturze. Na
+przyk³ad, 'g' ma odleg³o¶æ 1 od klawiszy 'r', 't', 'y', 'f', 'h', 'v',
+'b' i 'n'. Dla bezpo¶rednich s±siadów po przek±tnej (jak 'r', 'y', 'v'
+i 'n') uznaje siê odleg³o¶æ 1 zamiast 1.414, aby zapobiec sk³onno¶ciom
+poziomym i pionowym.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -34,6 +41,7 @@ instead of 1.414 to help to prevent horizontal/vertical bias.
 %build
 perl Makefile.PL
 %{__make}
+
 %{!?_without_tests:%{__make} test}
 
 %install
