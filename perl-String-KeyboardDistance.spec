@@ -10,7 +10,7 @@ Summary(pl):	String::KeyboardDistance - algorytm porównywania ³añcuchów
 Name:		perl-String-KeyboardDistance
 Version:	1.01
 Release:	3
-License:	?
+License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	366c4b5641725eb833cca800ee85e352
