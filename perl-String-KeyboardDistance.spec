@@ -6,7 +6,7 @@
 %define		pdir	String
 %define		pnam	KeyboardDistance
 Summary:	String::KeyboardDistance - string comparison algorithm
-Summary(pl):	String::KeyboardDistance - algorytm porównywania ³añcuchów
+Summary(pl.UTF-8):   String::KeyboardDistance - algorytm porÃ³wnywania Å‚aÅ„cuchÃ³w
 Name:		perl-String-KeyboardDistance
 Version:	1.01
 Release:	3
@@ -28,13 +28,13 @@ distance of 1 from the keys 'r', 't', 'y', 'f', 'h', 'v', 'b', and
 to have a distance of 1 instead of 1.414 to help to prevent
 horizontal/vertical bias.
 
-%description -l pl
-Ten modu³ jest implementacj± pewnej wersji odleg³o¶ci klawiaturowej
-do rozmytego dopasowywania ³añcuchów. Odleg³o¶æ klawiaturowa to miara
-fizycznej odleg³o¶ci pomiêdzy dwoma klawiszami na klawiaturze. Na
-przyk³ad, 'g' ma odleg³o¶æ 1 od klawiszy 'r', 't', 'y', 'f', 'h', 'v',
-'b' i 'n'. Dla bezpo¶rednich s±siadów po przek±tnej (jak 'r', 'y', 'v'
-i 'n') uznaje siê odleg³o¶æ 1 zamiast 1.414, aby zapobiec sk³onno¶ciom
+%description -l pl.UTF-8
+Ten moduÅ‚ jest implementacjÄ… pewnej wersji odlegÅ‚oÅ›ci klawiaturowej
+do rozmytego dopasowywania Å‚aÅ„cuchÃ³w. OdlegÅ‚oÅ›Ä‡ klawiaturowa to miara
+fizycznej odlegÅ‚oÅ›ci pomiÄ™dzy dwoma klawiszami na klawiaturze. Na
+przykÅ‚ad, 'g' ma odlegÅ‚oÅ›Ä‡ 1 od klawiszy 'r', 't', 'y', 'f', 'h', 'v',
+'b' i 'n'. Dla bezpoÅ›rednich sÄ…siadÃ³w po przekÄ…tnej (jak 'r', 'y', 'v'
+i 'n') uznaje siÄ™ odlegÅ‚oÅ›Ä‡ 1 zamiast 1.414, aby zapobiec skÅ‚onnoÅ›ciom
 poziomym i pionowym.
 
 %prep
