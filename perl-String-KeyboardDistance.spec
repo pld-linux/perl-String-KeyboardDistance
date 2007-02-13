@@ -6,7 +6,7 @@
 %define		pdir	String
 %define		pnam	KeyboardDistance
 Summary:	String::KeyboardDistance - string comparison algorithm
-Summary(pl.UTF-8):   String::KeyboardDistance - algorytm porównywania łańcuchów
+Summary(pl.UTF-8):	String::KeyboardDistance - algorytm porównywania łańcuchów
 Name:		perl-String-KeyboardDistance
 Version:	1.01
 Release:	3
