@@ -9,7 +9,7 @@ Summary:	String::KeyboardDistance - string comparison algorithm
 Summary(pl.UTF-8):	String::KeyboardDistance - algorytm porównywania łańcuchów
 Name:		perl-String-KeyboardDistance
 Version:	1.01
-Release:	3
+Release:	4
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
