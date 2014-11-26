@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	String
 %define		pnam	KeyboardDistance
+%include	/usr/lib/rpm/macros.perl
 Summary:	String::KeyboardDistance - string comparison algorithm
 Summary(pl.UTF-8):	String::KeyboardDistance - algorytm porównywania łańcuchów
 Name:		perl-String-KeyboardDistance
@@ -14,6 +14,7 @@ License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	366c4b5641725eb833cca800ee85e352
+URL:		http://search.cpan.org/dist/String-KeyboardDistance/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -29,8 +30,8 @@ to have a distance of 1 instead of 1.414 to help to prevent
 horizontal/vertical bias.
 
 %description -l pl.UTF-8
-Ten moduł jest implementacją pewnej wersji odległości klawiaturowej
-do rozmytego dopasowywania łańcuchów. Odległość klawiaturowa to miara
+Ten moduł jest implementacją pewnej wersji odległości klawiaturowej do
+rozmytego dopasowywania łańcuchów. Odległość klawiaturowa to miara
 fizycznej odległości pomiędzy dwoma klawiszami na klawiaturze. Na
 przykład, 'g' ma odległość 1 od klawiszy 'r', 't', 'y', 'f', 'h', 'v',
 'b' i 'n'. Dla bezpośrednich sąsiadów po przekątnej (jak 'r', 'y', 'v'
